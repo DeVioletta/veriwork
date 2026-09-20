@@ -46,18 +46,19 @@ export interface Prediction {
   signals: Signal[];
 }
 
+export interface ModelMetrics {
+  precision: number;
+  recall: number;
+  f1: number;
+  roc_auc: number;
+  pr_auc: number;
+}
+
 export interface ModelInfo {
   status: string;
   model_name: string;
-  trained_at: string;
   threshold: number;
-  n_train: number;
-  n_test: number;
-  metrics: {
-    precision: number;
-    recall: number;
-    f1: number;
-    roc_auc: number;
-    pr_auc: number;
-  };
+  n_test?: number;
+  /** null jika export_jobs.py belum dijalankan. */
+  metrics: ModelMetrics | null;
 }

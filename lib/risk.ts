@@ -67,25 +67,7 @@ export function getRiskTheme(prob: number | null | undefined): RiskTheme {
   };
 }
 
-// Nama token buatan (dari model_service/features.py) dalam bahasa yang mudah dipahami.
-export const SIGNAL_LABELS: Record<string, string> = {
-  zz_no_logo: 'tanpa logo perusahaan',
-  zz_no_questions: 'tanpa pertanyaan skrining',
-  zz_remote: 'pekerjaan remote',
-  zz_no_salary: 'gaji tidak dicantumkan',
-  zz_no_profile: 'tanpa profil perusahaan',
-  tok_url: 'mengandung URL',
-  tok_email: 'mengandung email',
-  tok_phone: 'mengandung nomor telepon',
-};
-
+// Nama fitur sudah dibuat mudah dibaca oleh service model (model_service/serve.py).
 export function signalLabel(term: string): string {
-  return term
-    .split(' ')
-    .map((t) => {
-      if (SIGNAL_LABELS[t]) return SIGNAL_LABELS[t];
-      if (t.startsWith('zz_')) return t.slice(3).replace(/_/g, ' ');
-      return t;
-    })
-    .join(' + ');
+  return term;
 }

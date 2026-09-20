@@ -411,10 +411,16 @@ function ModelStatus({ model }: { model: ModelInfo | null | undefined }) {
         <span className="w-2 h-2 rounded-full bg-emerald-500" />
         Model aktif: {model.model_name}
       </span>
-      <span className="font-mono">
-        Data uji (kelas fraud): precision {m.precision.toFixed(2)} | recall {m.recall.toFixed(2)} | F1{' '}
-        {m.f1.toFixed(2)} | ROC-AUC {m.roc_auc.toFixed(2)}
-      </span>
+      {m ? (
+        <span className="font-mono">
+          Data uji (kelas fraud): precision {m.precision.toFixed(2)} | recall {m.recall.toFixed(2)} | F1{' '}
+          {m.f1.toFixed(2)} | ROC-AUC {m.roc_auc.toFixed(2)}
+        </span>
+      ) : (
+        <span>
+          Metrik belum tersedia. Jalankan <code className="font-mono">python export_jobs.py</code>.
+        </span>
+      )}
     </div>
   );
 }
