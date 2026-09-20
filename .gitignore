@@ -1,0 +1,11 @@
+node_modules
+.next
+.env*.local
+next-env.d.ts
+tsconfig.tsbuildinfo
+
+# Python
+__pycache__/
+.venv/
+model_service/artifacts/
+model_service/fake_job_postings.csv
