@@ -20,16 +20,11 @@ export default function Header() {
               <Icon name="shield" className="w-5 h-5" strokeWidth={2.2} />
             </div>
             <div>
-              <div className="flex items-center gap-1.5">
-                <span className="font-bold text-xl tracking-tight text-slate-900">
-                  Veri<span className="text-sky-600">Work</span>
-                </span>
-                <span className="px-1.5 py-0.5 text-[10px] font-semibold bg-sky-50 text-sky-700 rounded border border-sky-200">
-                  ML DEMO
-                </span>
-              </div>
-              <p className="text-[11px] text-slate-500 font-medium leading-none hidden sm:block">
-                Simulasi Deteksi Lowongan Palsu (EMSCAD)
+              <span className="font-bold text-xl tracking-tight text-slate-900">
+                Veri<span className="text-sky-600">Work</span>
+              </span>
+              <p className="text-[11px] text-slate-500 font-medium leading-none hidden sm:block mt-0.5">
+                Temukan lowongan, cek keamanannya
               </p>
             </div>
           </Link>

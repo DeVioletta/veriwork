@@ -1,0 +1,5 @@
+cd model_service
+uvicorn serve:app --port 8000
+
+deactivate
+npm run dev

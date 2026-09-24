@@ -6,7 +6,7 @@ import Footer from '@/components/Footer';
 export const metadata: Metadata = {
   title: 'VeriWork | Deteksi Lowongan Kerja Palsu',
   description:
-    'Demo integrasi model machine learning ke Next.js untuk memprediksi lowongan kerja legitimate atau fraudulent.',
+    'Temukan lowongan pekerjaan dan cek tingkat keamanannya sebelum melamar.',
 };
 
 export default function RootLayout({ children }: { children: React.ReactNode }) {

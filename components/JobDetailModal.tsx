@@ -52,7 +52,7 @@ export default function JobDetailModal({ job, onClose, onScored }: Props) {
           <div className="flex items-center justify-between gap-4">
             <div>
               <span className={`text-[11px] font-bold uppercase tracking-wider ${theme.bannerSub}`}>
-                Probabilitas Fraud (Model ML)
+                Skor Keamanan Lowongan
               </span>
               <div className="flex items-baseline gap-2.5 mt-0.5">
                 <span className="text-2xl sm:text-3xl font-extrabold tracking-tight font-mono">
@@ -180,7 +180,7 @@ export default function JobDetailModal({ job, onClose, onScored }: Props) {
         </div>
 
         <div className="p-4 bg-slate-50 border-t border-slate-200 flex items-center justify-between">
-          <span className="text-xs text-slate-400">VeriWork ML Demo</span>
+          <span className="text-xs text-slate-400">VeriWork</span>
           <button
             onClick={onClose}
             className="px-4 py-2 bg-white hover:bg-slate-100 text-slate-700 text-xs font-semibold rounded-lg border border-slate-300 transition-colors"

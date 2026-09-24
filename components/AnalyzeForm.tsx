@@ -352,8 +352,7 @@ export default function AnalyzeForm() {
         </div>
 
         <p className="text-[11px] text-slate-500">
-          Model dilatih pada teks berbahasa Inggris. Teks berbahasa Indonesia akan menghasilkan
-          prediksi yang tidak dapat diandalkan.
+          Untuk hasil terbaik, isi deskripsi pekerjaan dalam bahasa Inggris.
         </p>
 
         <button

@@ -13,8 +13,7 @@ export default function Footer() {
               <span className="font-bold text-lg text-slate-900">VeriWork</span>
             </div>
             <p className="text-xs text-slate-500 leading-relaxed">
-              Aplikasi demonstrasi integrasi model machine learning ke Next.js. Bukan portal kerja
-              sungguhan dan bukan alat verifikasi resmi.
+              Bantu kamu menemukan lowongan pekerjaan dan mengecek keamanannya sebelum melamar.
             </p>
           </div>
 
@@ -38,17 +37,17 @@ export default function Footer() {
 
           <div>
             <h5 className="text-xs font-bold uppercase tracking-wider text-slate-900 mb-3">
-              Tentang Model
+              Bantuan
             </h5>
             <p className="text-xs text-slate-500 leading-relaxed">
-              Dilatih pada dataset Employment Scam Aegean (EMSCAD) berbahasa Inggris. Hasilnya
-              berupa probabilitas statistik, bukan bukti bahwa sebuah lowongan menipu.
+              Skor keamanan bersifat perkiraan. Tetap periksa perusahaan secara mandiri sebelum
+              memberikan data pribadi atau uang.
             </p>
           </div>
         </div>
 
         <div className="pt-6 border-t border-slate-100 text-xs text-slate-400">
-          <p>VeriWork ML Demo. Dataset: Real / Fake Job Posting Prediction (Kaggle).</p>
+          <p>&copy; {new Date().getFullYear()} VeriWork. Semua hak dilindungi.</p>
         </div>
       </div>
     </footer>

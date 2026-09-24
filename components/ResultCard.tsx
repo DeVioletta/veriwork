@@ -54,8 +54,8 @@ export default function ResultCard({ prediction }: { prediction: Prediction }) {
       <div className="flex items-start gap-2 text-[11px] text-slate-500 leading-relaxed">
         <Icon name="warning" className="w-3.5 h-3.5 shrink-0 mt-0.5 text-slate-400" />
         <p>
-          Ini prediksi statistik dari model yang dilatih pada teks berbahasa Inggris. Bukan bukti
-          penipuan dan bukan pengganti pengecekan manual perusahaan.
+          Skor ini bersifat perkiraan, bukan bukti penipuan. Tetap periksa perusahaan secara mandiri
+          sebelum melamar atau membagikan data pribadi.
         </p>
       </div>
     </div>
